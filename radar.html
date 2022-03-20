@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Radar</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/JavaScript" src="common.js"></script>
+</head>
+<body onload="startTimeout();">
+    <!--tabs at the top-->
+    <ul class="toptabs">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="cal_daga.html">Daga</a></li>
+        <li><a href="cal_math.html">Mateusz</a></li>
+        <li><a href="cal_olek.html">Olek</a></li>
+        <li><a href="newsfeed.html">News</a></li>
+        <li><a href="weather.html">Pogoda</a></li>
+        <li id=active><a>Radar</a></li>
+        <li><a href="windy.html">Wiatr</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
+        <li><a href="clock.html">World</a></li>
+    </ul>
+
+    <!--all page content-->
+    <div class="content">
+        <iframe class="content" scrolling="no"
+            src="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJ3ZWF0aGVyIiwiY2VudGVyIjpbLTg5LjQwNyw0MC43MDZdLCJsb2NhdGlvbiI6Wy04OS40MDcsNDAuNzA0XSwiem9vbSI6N30sImFuaW1hdGluZyI6ZmFsc2UsImJhc2UiOiJzdGFuZGFyZCIsImFydGNjIjpmYWxzZSwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwicmZjIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6ZmFsc2UsIm9wYWNpdHkiOnsiYWxlcnRzIjowLjgsImxvY2FsIjowLjYsImxvY2FsU3RhdGlvbnMiOjAuOCwibmF0aW9uYWwiOjAuNn19#/">
+        </iframe>
+    </div>
+
+</body>
+</html>
