@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Numerical Weather Forecast</title>
+    <title>Backyard Weather Station</title>
     <meta charset="UTF-8">
     <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,15 +18,17 @@
         <li><a href="weather.html">Weather</a></li>
         <li><a href="radar.html">Radar</a></li>
         <li><a href="windy.html">Wind</a></li>
-        <li><a href="backyard.html">Backyard</a></li>
-        <li id=active><a>Forecast</a></li>
+        <li id="active"><a>Backyard</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
         <li><a href="clock.html">World</a></li>
     </ul>
 
     <!--all page content-->
     <div class="content">
-        <img class="weather" src="https://forecast.weather.gov/meteograms/Plotter.php?lat=40.7069&lon=-89.4775&wfo=ILX&zcode=ILZ037&gset=15&gdiff=3&unit=0&tinfo=CY6&ahour=0&pcmd=11101111111110100000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6" style="width:96%; height:90%">
-        </div>
+        <iframe class="content" scrolling="yes"
+            src="https://weather.matthewm.com.pl/">
+        </iframe>
+    </div>
 
 </body>
 </html>
