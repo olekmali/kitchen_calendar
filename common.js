@@ -1,4 +1,4 @@
-var IDLE_TIMEOUT = 600; //seconds
+var IDLE_TIMEOUT = 3600; //seconds
 var _idleSecondsCounter = 0;
 
 document.onclick = function()
@@ -22,8 +22,8 @@ function CheckIdleTime()
     {
         _idleSecondsCounter++;
     } else {
-        _idleSecondsCounter=0;
-        // window.location.replace("index.html");
+        // window.location.replace("index.html"); // return to home location
+        window.location.reload(); // reload the current page
     }
 }
 
