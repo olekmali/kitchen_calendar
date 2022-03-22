@@ -45,34 +45,32 @@ ul.toptabs li a:hover {background-color: #ddd;}
 }
 
 /*Content stuff*/
-iframe.content {
-    border-width: 0px;
-    width: 100%;
-    height: 800px;
-}
-
 div.content {
     display: block;
     position: absolute;
     top: 55px;
     margin: 20px;
     z-index: -1;
-    width:98%;
+    width: 100%;
     overflow: auto;
     color: hsl(0, 0%, 88%);
     font-size: 30px;
 }
 
-img.weather {
-    position: fixed;
-    top: 10%;
-    left: 2%;
-    right: 2%;
-    display:block;
+iframe.content {
+    border-width: 0px;
+    width:   98%;
+    height: 780px;
+}
+
+img.content {
+    display:  block;
+    width:    98%;
+    height: 780px;
 }
 
 
 /* removing "+Google Calendar" button - Jason */
-div.subscribe-image{
+div.logo-plus-button-lockup {
     display: none;
 }

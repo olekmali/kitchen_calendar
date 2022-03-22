@@ -22,7 +22,8 @@ function CheckIdleTime()
     {
         _idleSecondsCounter++;
     } else {
-        window.location.replace("index.html");
+        _idleSecondsCounter=0;
+        // window.location.replace("index.html");
     }
 }
 
