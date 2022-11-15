@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sun Clock</title>
+    <title>Phone Directory</title>
     <meta charset="UTF-8">
     <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,7 +14,7 @@
         <li><a href="cal_daga.html">Daga</a></li>
         <li><a href="cal_math.html">Mateusz</a></li>
         <li><a href="cal_olek.html">Olek</a></li>
-        <li><a href="directory.html">Phones</a></li>
+        <li id="active"><a href="directory.html">Phones</a></li>
         <li><a href="newsfeed.html">News</a></li>
         <li><a href="history.html">History</a></li>
         <li><a href="word.html">Word</a></li>
@@ -24,13 +24,14 @@
         <li><a href="uv.html">UV</a></li>
         <li><a href="weather.html">Weather</a></li>
         <li><a href="forecast.html">Forecast</a></li>
-        <li id=active><a href="clock.html">World</a></li>
+        <li><a href="clock.html">World</a></li>
     </ul>
 
     <!--all page content-->
-    <div class="content">               
-        <!-- img id="refreshable" class="content" src="https://static.die.net/earth/mercator/1600.jpg" -->
-        <img id="refreshable" class="content" src="https://www.timeanddate.com/scripts/sunmap.php">
+    <div class="content">
+        <iframe id="refreshable" class="content" scrolling="yes"
+            src="dir.html">
+        </iframe>
     </div>
 
 </body>
