@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Backyard Weather Station</title>
+    <title>Word of the Day</title>
     <meta charset="UTF-8">
     <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -16,11 +16,11 @@
         <li><a href="cal_olek.html">Olek</a></li>
         <li><a href="newsfeed.html">News</a></li>
         <li><a href="history.html">History</a></li>
-        <li><a href="word.html">Word</a></li>
+        <li id="active"><a href="word.html">Word</a></li>
         <li><a href="radar.html">Radar</a></li>
         <li><a href="windy.html">Wind</a></li>
         <li><a href="pm25.html">PM25</a></li>
-        <li id="active"><a href="uv.html">UV</a></li>
+        <li><a href="uv.html">UV</a></li>
         <li><a href="weather.html">Weather</a></li>
         <li><a href="forecast.html">Forecast</a></li>
         <li><a href="clock.html">World</a></li>
@@ -28,7 +28,10 @@
 
     <!--all page content-->
     <div class="content">
-        <img id="refreshable" class="content" src="https://www.cpc.ncep.noaa.gov/products/stratosphere/uv_index/gif_files/uv_alert_usa.png">
+        <iframe id="refreshable" class="content" scrolling="yes"
+            src="https://www.merriam-webster.com/word-of-the-day/">
+        </iframe>
     </div>
+
 </body>
 </html>
