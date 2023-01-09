@@ -19,18 +19,21 @@
         <li><a href="newsfeed.html">News</a></li>
         <li><a href="history.html">History</a></li>
         <li><a href="word.html">Word</a></li>
+        <li><a href="pm25.html">Air Q</a></li>
         <li><a href="radar.html">Radar</a></li>
-        <li id=active><a href="windy.html">Wind</a></li>
-        <li><a href="pm25.html">PM25</a></li>
         <li><a href="uv.html">UV</a></li>
         <li><a href="weather.html">Weather</a></li>
+        <li id=active><a href="windy.html">Wind</a></li>
         <li><a href="forecast.html">Forecast</a></li>
         <li><a href="clock.html">World</a></li>
     </ul>
 
     <!--all page content-->
     <div class="content">
-        <img id="refreshable" class="content" src="https://graphical.weather.gov/images/conus/WindSpd1_conus.png">
+        <!-- <img id="refreshable" class="content" src="https://graphical.weather.gov/images/conus/WindSpd1_conus.png"> -->
+        <iframe id="refreshable" class="content" scrolling="no"
+            src="https://embed.windy.com/">
+        </iframe>
     </div>
 
 </body>
