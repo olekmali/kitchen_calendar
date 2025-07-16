@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Numerical Weather Forecast</title>
+    <title>Weather Hazards</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Pragma" content="no-cache">
@@ -20,7 +20,7 @@
         <li><a href="newsfeed.html">News</a></li>
         <li><a href="word.html">Word</a></li>
         <li><a href="pm25.html">Air Q</a></li>
-        <li><a href="hazards.html">Hazards</a></li>
+        <li id=active><a href="hazards.html">Hazards</a></li>
         <li><a href="radar.html">Radar</a></li>
         <li><a href="rain.html">Rain</a></li>
         <li><a href="snow.html">Snow</a></li>
@@ -28,19 +28,13 @@
         <li><a href="thunder.html">Thunder</a></li>
         <li><a href="windy.html">Wind</a></li>
         <li><a href="weather.html">Weather</a></li>
-        <li id=active><a href="forecast.html">Forecast</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
         <li><a href="clock.html">World</a></li>
     </ul>
 
     <!--all page content-->
     <div class="content">
-<!--
-        <iframe id="refreshable" class="content" scrolling="yes" 
-            src="https://weather.com/weather/tenday/l/Washington+IL">
-        </iframe>
--->
-        <img id="refreshable" class="content" src="https://forecast.weather.gov/meteograms/Plotter.php?lat=40.7069&lon=-89.4775&wfo=ILX&zcode=ILZ037&gset=15&gdiff=3&unit=0&tinfo=CY6&ahour=0&pcmd=11101111111110100000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6">
+        <img id="refreshable" class="content" src="https://www.wpc.ncep.noaa.gov/threats/final/hazards_d3_7_contours.png">
     </div>
-
 </body>
 </html>
