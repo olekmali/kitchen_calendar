@@ -1,21 +1,16 @@
-var TIME_FOR_ACTION = 3600; //seconds
-var _SecondsCounter = 0;
+var frequency = 1000 * 60 * 60;
 
-function CheckTime()
+function getRandomInt(min, max) { return Math.floor(Math.random() * (max - min)) + min; }
+
+var menuitems = [ "index.html", "cal_0000.html", "cal_daga.html", "cal_math.html", "cal_olek.html", "directory.html", "newsfeed.html", "word.html", "pm25.html",
+"hazards.html", "radar.html", "rain.html", "snow.html", "uv.html", "thunder.html", "windy.html", "weather.html", "forecast.html", "clock.html" ];
+
+function NextFrame()
 {
-    if ( _SecondsCounter < TIME_FOR_ACTION)
-    {
-        _SecondsCounter++;
-    } else {
-        _SecondsCounter = 0;
-        // window.location.replace("index.html"); // return to home location
-        // window.location.reload(); // reload the current page
-        var toreload = document.getElementById('refreshable');
-        toreload.src = toreload.src;
-    }
+    window.location.replace(menuitems[ getRandomInt(0, menuitems.length) ] );
 }
 
 function startTimeout()
 {
-    window.setInterval(CheckTime, 1000);
+    window.setTimeout(NextFrame, frequency);
 }
